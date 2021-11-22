@@ -1,0 +1,25 @@
+2021-11-22 22:02:20,205  INFO [main] BigSmall:97 - "" entered
+2021-11-22 22:02:20,595  INFO [main] BigSmall:100 - "" entered
+2021-11-22 22:02:31,022  INFO [main] BigSmall:97 - "simon@123" entered
+2021-11-22 22:02:31,424  INFO [main] BigSmall:100 - "abcd" entered
+2021-11-22 22:02:40,401  INFO [main] BigSmall:97 - "JackNJill@gmail.com" entered
+2021-11-22 22:02:40,829  INFO [main] BigSmall:100 - "JackNJill@123" entered
+2021-11-22 22:02:50,537  INFO [main] BigSmall:44 - Successfully sorted the items in High to Low price
+2021-11-22 22:02:51,527  INFO [main] BigSmall:38 - Search Box Activated
+2021-11-22 22:03:06,096  INFO [main] BigSmall:56 - Successfully searched product - Diary
+2021-11-22 22:03:06,459  INFO [main] BigSmall:65 - Successfully verified products are displayed
+2021-11-22 22:03:28,171  INFO [main] BigSmall:61 - Added product to the cart
+2021-11-22 22:03:48,675  INFO [main] BigSmall:70 - Proceeeded to checkout and returned to cart
+2021-11-22 22:04:09,551  INFO [main] BigSmall:62 - Items added to the wishlist
+2021-11-22 22:04:16,788  INFO [main] BigSmall:35 - Navigated to All of it Page
+2021-11-22 22:04:21,524  INFO [main] BigSmall:50 - Verified Auto Rickshaw Pen Stand
+2021-11-22 22:04:29,447  INFO [main] WishlistPageSD:35 - Navigated to Wishlist Page 
+2021-11-22 22:04:41,922  INFO [main] WishlistPageSD:48 - Products are displayed in Wishlist
+2021-11-22 22:04:44,598  INFO [main] BigSmall:35 - Navigated to About Us Page
+2021-11-22 22:04:44,941  INFO [main] BigSmall:45 - Verified title of About Us Page
+2021-11-22 22:04:49,245  INFO [main] BigSmall:34 - Navigated to Gift Cards Page
+2021-11-22 22:04:53,040  INFO [main] BigSmall:43 - Added Gift Card to cart
+2021-11-22 22:04:59,168  INFO [main] BigSmall:45 - Standard delivery time is 5-7 business days. Choose online payment for contactless delivery.
+Order delivery might be delayed due to the current Covid-19 situation.
+2021-11-22 22:04:59,225  INFO [main] BigSmall:48 - Cart Verified Successfully 
+2021-11-22 22:05:10,033  INFO [main] BigSmall:52 - Title verified successfully 

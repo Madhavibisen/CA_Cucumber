@@ -1,0 +1,453 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 18 15:27:23 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>85 seconds (85356 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to AllOfIt Page", "Optional[AllOfIt]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/collections/allofit&quot; data-dropdown-rel=&quot;all-of-it&quot; class=&quot;site-nav__link&quot;&gt;...&lt;/a&gt; is not clickable at point (640, 155). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.AllOfItPageSD.user_click_on_allofit(AllOfItPageSD.java:33)
+	at ?.user click on AllOfIt(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/07AllOfItPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2066366456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2066366456'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/collections/allofit&quot; data-dropdown-rel=&quot;all-of-it&quot; class=&quot;site-nav__link&quot;&gt;...&lt;/a&gt; is not clickable at point (640, 155). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.AllOfItPageSD.user_click_on_allofit(AllOfItPageSD.java:33)
+	at ?.user click on AllOfIt(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/07AllOfItPage.feature:6)
+</pre></div></td>
+<td>1</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to AboutUs Page", "Optional[AboutUs]"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.AboutUsPageSD.user_click_on_about_us(AboutUsPageSD.java:34)
+	at ?.user click on About Us(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/09AboutUsPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1955587357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1955587357'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.AboutUsPageSD.user_click_on_about_us(AboutUsPageSD.java:34)
+	at ?.user click on About Us(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/09AboutUsPage.feature:6)
+</pre></div></td>
+<td>5</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to Wishlist Page", "Optional[Wishlist]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;site-nav__link site-nav__link--icon swym-wishlist wishlistlink&quot; href=&quot;#swym-wishlist&quot;&gt;...&lt;/a&gt; is not clickable at point (898, 63). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.WishlistPageSD.user_click_on_wishlist(WishlistPageSD.java:33)
+	at ?.user click on WishList(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/08WishlistPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace987489551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987489551'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;site-nav__link site-nav__link--icon swym-wishlist wishlistlink&quot; href=&quot;#swym-wishlist&quot;&gt;...&lt;/a&gt; is not clickable at point (898, 63). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.WishlistPageSD.user_click_on_wishlist(WishlistPageSD.java:33)
+	at ?.user click on WishList(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/08WishlistPage.feature:6)
+</pre></div></td>
+<td>1</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Testing the Contact us", "Optional[Contact us]"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ContactUsPageSD.click_on_contactus_footer(ContactUsPageSD.java:40)
+	at ?.Click on ContactUs footer(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/11ContactUsPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1239132915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1239132915'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ContactUsPageSD.click_on_contactus_footer(ContactUsPageSD.java:40)
+	at ?.Click on ContactUs footer(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/11ContactUsPage.feature:6)
+</pre></div></td>
+<td>8</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to ShopByCategory Page", "Optional[ShopByCategoryPage]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/collections&quot; data-dropdown-rel=&quot;shop-by-category&quot; class=&quot;site-nav__link site-nav__link--has-dropdown&quot;&gt;...&lt;/a&gt; is not clickable at point (910, 116). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ShopByCategoryPageSD.user_click_on_shop_by_category_menu(ShopByCategoryPageSD.java:34)
+	at ?.user click on Shop By Category menu(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/06ShopByCategoryPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1704535540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704535540'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/collections&quot; data-dropdown-rel=&quot;shop-by-category&quot; class=&quot;site-nav__link site-nav__link--has-dropdown&quot;&gt;...&lt;/a&gt; is not clickable at point (910, 116). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ShopByCategoryPageSD.user_click_on_shop_by_category_menu(ShopByCategoryPageSD.java:34)
+	at ?.user click on Shop By Category menu(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/06ShopByCategoryPage.feature:6)
+</pre></div></td>
+<td>1</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to ChristmasGifts Page", "Optional[ChristmasGifts]"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ChristmasGiftsPageSD.click_on_go_to_checkout(ChristmasGiftsPageSD.java:41)
+	at ?.click on Go to Checkout(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/05ChristmasGiftsPage.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace805690186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805690186'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.ChristmasGiftsPageSD.click_on_go_to_checkout(ChristmasGiftsPageSD.java:41)
+	at ?.click on Go to Checkout(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/05ChristmasGiftsPage.feature:9)
+</pre></div></td>
+<td>20</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to GiftCard Page", "Optional[GiftCard]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;site-nav__link site-nav__link--icon giftcardlink&quot; href=&quot;https://www.bigsmall.in/products/gift-card&quot;&gt;...&lt;/a&gt; is not clickable at point (957, 63). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.GiftCardPageSD.user_click_on_giftcard(GiftCardPageSD.java:33)
+	at ?.user click on GiftCard(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/10GiftCardPage.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1523034648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1523034648'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;site-nav__link site-nav__link--icon giftcardlink&quot; href=&quot;https://www.bigsmall.in/products/gift-card&quot;&gt;...&lt;/a&gt; is not clickable at point (957, 63). Other element would receive the click: &lt;body class=&quot;template-product jdgm--leex-script-loaded js-animate cart-has-items js-drawer-open swym-no-touch swym-ready swym-speed&amp;amp;checkoutfixes-872 swym-speed&amp;amp;checkoutfixes-872-iconbtnlink&quot; ontouchstart=&quot;return true;&quot; data-transitions=&quot;false&quot; data-animate_underlines=&quot;true&quot; data-animate_images=&quot;true&quot; data-button_style=&quot;round-slight&quot; data-type_product_capitalize=&quot;false&quot; data-type_header_capitalize=&quot;true&quot; data-product_image_scatter=&quot;false&quot; data-button_type_style=&quot;normal&quot; data-aos-easing=&quot;ease-out-quad&quot; data-aos-duration=&quot;400&quot; data-aos-delay=&quot;0&quot;&gt;...&lt;/body&gt;
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-I53I0DN&apos;, ip: &apos;192.168.29.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.35 (8df3babf8da8f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:9075}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eda3e8bc0b3ff01268e4fc5afd945bac
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.mindtree.stepdefinitions.GiftCardPageSD.user_click_on_giftcard(GiftCardPageSD.java:33)
+	at ?.user click on GiftCard(file:///C:/Users/user/eclipse-workspace/CA_Cucumber/Features/10GiftCardPage.feature:6)
+</pre></div></td>
+<td>1</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Optional[Login]"</td>
+<td></td>
+<td>12</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Optional[Login]"</td>
+<td></td>
+<td>7</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Optional[Login]"</td>
+<td></td>
+<td>6</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to PersonalizedGifts Page", "Optional[PersonalizedGifts]"</td>
+<td></td>
+<td>4</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful opening of the browser and hit the url", "Optional[Login]"</td>
+<td></td>
+<td>9</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+<tr>
+<td title='com.mindtree.runner.BigSmall.runScenario()'><b>runScenario</b><br>Test class: com.mindtree.runner.BigSmall<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To navigate to Search Page", "Optional[SearchPage]"</td>
+<td></td>
+<td>4</td>
+<td>com.mindtree.runner.BigSmall@37374a5e</td></tr>
+</table><p>
+</body>
+</html>
